@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G-Legacy</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+margin:0;
+font-family:Segoe UI, Arial;
+background:linear-gradient(135deg,#140021,#0b0012,#2a0a3d);
+color:white;
+}
+
+/* HEADER */
+header{
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(135deg,#1a002b,#0b0012);
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.logo{
+width:72px;
+height:72px;
+margin:auto;
+border-radius:14px;
+background:linear-gradient(135deg,#a855f7,#facc15);
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+font-size:22px;
+color:black;
+}
+
+h1{
+font-size:42px;
+margin:15px 0;
+background:linear-gradient(90deg,#a855f7,#facc15);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+p{
+color:#cbd5e1;
+max-width:700px;
+margin:auto;
+line-height:1.6;
+}
+
+/* SECTION */
+section{
+padding:50px 15px;
+text-align:center;
+}
+
+.title{
+font-size:20px;
+color:#facc15;
+margin-bottom:25px;
+letter-spacing:1px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:18px;
+max-width:1100px;
+margin:auto;
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:14px;
+padding:18px;
+text-align:left;
+transition:0.25s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#facc15;
+}
+
+.card-title{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:600;
+color:#facc15;
+}
+
+.card i{
+color:#a855f7;
+}
+
+.desc{
+color:#cbd5e1;
+font-size:14px;
+margin-top:8px;
+}
+
+/* TAG */
+.tag{
+display:inline-block;
+margin-top:10px;
+padding:4px 10px;
+font-size:12px;
+border-radius:8px;
+font-weight:bold;
+}
+
+.free{background:#16a34a;}
+.paid{background:#dc2626;}
+
+/* BUTTON */
+.btn{
+margin-top:12px;
+width:100%;
+padding:10px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+background:linear-gradient(90deg,#a855f7,#facc15);
+color:black;
+transition:0.2s;
+}
+
+.btn:hover{
+transform:scale(1.03);
+}
+
+/* MODAL */
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.85);
+justify-content:center;
+align-items:center;
+}
+
+.modal-box{
+background:#160022;
+padding:25px;
+border-radius:16px;
+width:90%;
+max-width:400px;
+text-align:center;
+border:1px solid #a855f7;
+}
+
+.account{
+font-size:20px;
+font-weight:bold;
+color:#facc15;
+margin:15px 0;
+}
+
+.small{
+color:#cbd5e1;
+font-size:13px;
+}
+
+footer{
+text-align:center;
+padding:25px;
+color:#94a3b8;
+border-top:1px solid rgba(255,255,255,0.08);
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">GL</div>
+
+<h1>G-Legacy</h1>
+
+<p>
+Yon espas dijital pou fòmasyon, AI tools, booster, travay ak devlopman pwofesyonèl.
+Tout sèvis yo nan yon sèl sistèm.
+</p>
+
+</header>
+
+<!-- FORMATIONS -->
+<section>
+
+<div class="title">Fòmasyon</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-title"><i class="fa-solid fa-code"></i> Kreyasyon Sit Web</div>
+<div class="desc">Aprann fè sit pwofesyonèl ak HTML/CSS/JS.</div>
+<span class="tag paid">PEYE - $30</span>
+<button class="btn">Achte</button>
+</div>
+
+<div class="card">
+<div class="card-title"><i class="fa-solid fa-mobile"></i> Kreyasyon App</div>
+<div class="desc">Aprann fè aplikasyon mobil ak web apps.</div>
+<span class="tag paid">PEYE - $30</span>
+<button class="btn">Achte</button>
+</div>
+
+<div class="card">
+<div class="card-title"><i class="fa-solid fa-video"></i> Video AI</div>
+<div class="desc">Kreye video ak AI fasilman.</div>
+<span class="tag free">GRATIS</span>
+<button class="btn">Ouvri</button>
+</div>
+
+</div>
+</section>
+
+<!-- BOOSTER -->
+<section>
+
+<div class="title">Booster</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-title"><i class="fa-brands fa-tiktok"></i> TikTok</div>
+<div class="desc">Ogmante vizibilite + followers.</div>
+<span class="tag paid">PEYE</span>
+<button class="btn">Achte</button>
+</div>
+
+<div class="card">
+<div class="card-title"><i class="fa-brands fa-youtube"></i> YouTube</div>
+<div class="desc">Abòne + views reyèl.</div>
+<span class="tag paid">PEYE</span>
+<button class="btn">Achte</button>
+</div>
+
+<div class="card">
+<div class="card-title"><i class="fa-brands fa-whatsapp"></i> WhatsApp</div>
+<div class="desc">Devlope chèn ou fasil.</div>
+<span class="tag paid">PEYE</span>
+<button class="btn">Achte</button>
+</div>
+
+</div>
+</section>
+
+<!-- GRATIS -->
+<section>
+
+<div class="title">Zouti GRATIS</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-title"><i class="fa-solid fa-laptop-code"></i> Code Editor</div>
+<div class="desc">Teste code HTML/CSS/JS.</div>
+<span class="tag free">GRATIS</span>
+<button class="btn">Ouvri</button>
+</div>
+
+<div class="card">
+<div class="card-title"><i class="fa-solid fa-robot"></i> AI Video</div>
+<div class="desc">Kreye video ak AI.</div>
+<span class="tag free">GRATIS</span>
+<button class="btn">Ouvri</button>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section>
+
+<div class="title">Kontak</div>
+
+<div class="card" style="max-width:500px;margin:auto;text-align:center;">
+<div class="card-title"><i class="fa-solid fa-headset"></i> Sipò</div>
+<p>+509 34 83 0635</p>
+<button class="btn">WhatsApp</button>
+</div>
+
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+
+<div class="modal-box">
+
+<h3 style="color:#facc15">NatCash Peman</h3>
+
+<p class="small">Nimewo:</p>
+
+<div class="account">43 59 53 35</div>
+
+<p class="small">Konfime sou WhatsApp apre peman</p>
+
+<button class="btn">Konfime</button>
+<br><br>
+<button class="btn" onclick="closeModal()">Fèmen</button>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 G-Legacy
+</footer>
+
+<script>
+
+function closeModal(){
+document.getElementById("modal").style.display="none";
+}
+
+</script>
+
+</body>
+</html>
